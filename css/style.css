@@ -1,0 +1,596 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.pular-navegacao {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    display: block;
+    color: transparent;
+    position: absolute;
+}
+
+.pular-navegacao:focus,
+.pular-navegacao:hover,
+.pular-navegacao:active {
+    font-size: 15px;
+    text-indent: none;
+    white-space: none;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    padding: 0.5%;
+    color: #FFFFFF;
+    background: #000000;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+/* cabecalho */
+
+.cabecalho {
+    background: url('../assets/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 65px 0;
+}
+
+.cabecalho-logo {
+    width: 270px;
+}
+
+.cabecalho-nav-lista {
+    display: flex;
+}
+
+.cabecalho-nav-lista-item {
+    margin-left: 20px;
+}
+
+.cabecalho-nav-lista-item a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.cabecalho-nav-lista-item a:hover {
+    text-decoration: underline;
+}
+
+/* css home */
+
+.banner {
+    width: 100%;
+    height: 600px;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.banner:hover {
+    opacity: 0.9;
+}
+
+.conteudoPrincipal {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudoPrincipal-introducao {
+    margin: 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudoPrincipal-introducao-titulo {
+    color: #881011;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+
+.conteudoPrincipal-introducao p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-indent: 3em;
+}
+
+.conteudoPrincipal-video {
+    width: 560px;
+    height: 315px;
+    margin-top: 40px;
+}
+
+.elementoCultural-titulo {
+    color: #242659;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0 20px;
+    clear: left;
+}
+
+.elementoCultural-titulo::before {
+    content: "◍ ";
+    color: #881011;
+}
+
+.elementoCultural-item-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px 35px;
+}
+
+.elementoCultural-item-conteudo:hover {
+    background: linear-gradient(#FAFAFA, #EAEAEA);
+    border-radius: 0 0 25px 25px;
+}
+
+.elementoCultural-item:nth-of-type(even) .elementoCultural-item-conteudo {
+    flex-direction: row-reverse;
+}
+
+.elementoCultural-item-conteudo-texto {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.elementoCultural-item-conteudo-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 50px;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.elementoCultural-item:nth-of-type(even) .elementoCultural-item-conteudo-imagem {
+    margin: 10px 50px 10px 0;
+}
+
+.elementoCultural-item-conteudo-imagem img {
+    width: 100%;
+}
+
+.elementoCultural-item-conteudo-imagem figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.elementoCultural-item-titulo {
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    padding: 40px 0 20px;
+    clear: right;
+}
+
+.elementoCultural-item-conteudo p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.elementoCultural em {
+    font-style: italic;
+    display: block;
+    margin: 0 0 10px;
+}
+
+/* secao de comentarios */
+
+.secao-de-comentarios {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 40px;
+    background: #EAEAEA;
+    margin: 50px 0;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.comentarios-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #881011;
+    padding-bottom: 20px;
+}
+
+.area-de-comentarios-comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    padding: 15px 20px 20px;
+    border: 1px solid #881011;
+    border-radius: 15px 0;
+    margin: 20px 0;
+}
+
+.comentario-nome {
+    font-weight: bold;
+    color: #242659;
+}
+
+.comentario-nome::after {
+    content: " disse:";
+    font-weight: normal;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+.comentario-texto {
+    text-align: justify;
+    white-space: normal;
+    margin: 15px 0;
+    line-height: 1.2em;
+}
+
+.comentario-data-e-hora {
+    font-size: 0.7em;
+    color: #A2A2A2;
+}
+
+.comentarios-form-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #242659;
+    padding: 20px 0;
+}
+
+.comentarios-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios-form label {
+    font-size: 18px;
+}
+
+.comentarios-form label::after {
+    content: " *";
+    color: #881011;
+}
+
+.comentarios-form-input {
+    font-size: 15px;
+    margin: 20px 0 30px;
+    padding: 10px 15px;
+}
+
+.comentario-botao {
+    width: 300px;
+    background: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 0;
+    border:  none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.comentario-botao:hover {
+    background: #881011;
+    transform: scale(1.02);
+}
+
+/* footer */
+
+.rodape {
+    background: #242659;
+    text-align: center;
+    padding: 30px 0 40px 0;
+    margin: 10em 0 0;
+}
+
+.rodape-logo {
+    width: 250px;
+}
+
+.rodape p {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+/* css da página de contato */
+
+.contato {
+    padding: 20px;
+    width: 70%;
+    margin: 40px auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 22px;
+}
+
+.formulario label::after {
+    content: " *";
+    color: #881011;
+}
+
+.input {
+    font-size: 15px;
+    margin: 20px 0 30px;
+    padding: 10px 15px;
+    width: 500px;
+}
+
+.botao {
+    width: 300px;
+    background: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 0;
+    border:  none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.botao:hover {
+    background: #881011;
+    transform: scale(1.02);
+}
+
+/* css da página de turismo */
+
+.conteudoPrincipal-turismo {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-turismo {
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    color: #881011;
+    padding-top: 60px;
+}
+
+.pontosTuristicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pontosTuristicos-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pontosTuristicos-item-titulo {
+    color: #242659;
+    font-size: 30px;
+    margin: 60px 0 40px;
+}
+
+.pontosTuristicos-item-titulo::before {
+    content: "🖈 ";
+    color: #881011;
+}
+
+.pontosTuristicos-item-conteudo {
+    padding: 0 0 40px;
+}
+
+.pontosTuristicos-item-conteudo-texto p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.pontosTuristicos-item-conteudo em {
+    font-style: italic;
+    display: block;
+    margin: 0 0 10px;
+}
+
+.pontosTuristicos-item-conteudo-imagem {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 50px;
+    width: 45%;
+}
+
+.pontosTuristicos-item-conteudo-imagem img {
+    width: 100%;
+}
+
+.pontosTuristicos-item-conteudo-imagem figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.pontosTuristicos-item-video {
+    width: 560px;
+    height: 315px;
+    clear: both;
+}
+
+.pontosTuristicos-item-mapa {
+    padding-bottom: 3em;
+    height: 450px;
+    width: 100%;
+}
+
+/* responsivo */
+
+@media(max-width: 768px) {
+    .cabecalho .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .cabecalho-logo {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .cabecalho-nav-lista-item {
+        margin: 10px 8px 0;
+    }
+
+    .cabecalho-nav-lista-item:first-child {
+        margin-left: 0;
+    }
+
+    .cabecalho-nav-lista-item:last-child {
+        margin-right: 0;
+    }
+
+    .cabecalho-nav-lista-item a {
+        font-size: 18px;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+
+    .conteudoPrincipal-introducao-titulo {
+        font-size: 30px;
+    }
+
+    .conteudoPrincipal-introducao p {
+        text-indent: 0;
+        font-size: 1em;
+    }
+
+    .conteudoPrincipal-video, 
+    .pontosTuristicos-item-video {
+        width: 100%;
+        height: calc(80vw * 315/560);
+    }
+
+    .rodape-logo {
+        width: 170px;
+    }
+
+    .elementoCultural-item-conteudo, 
+    .elementoCultural-item:nth-of-type(even) .elementoCultural-item-conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elementoCultural-item-conteudo-texto {
+        width: 100%;
+    }
+
+    .elementoCultural-item-titulo {
+        text-align: center;
+    }
+
+    .elementoCultural-item-conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px 0;
+    }
+
+    .elementoCultural-item-conteudo-imagem,
+    .elementoCultural-item:nth-of-type(even) .elementoCultural-item-conteudo-imagem,
+    .pontosTuristicos-item-conteudo-imagem {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .elementoCultural-item-conteudo-texto p, 
+    .pontosTuristicos-item-conteudo-texto p {
+        font-size: 1em;
+    }
+
+    .input, .botao {
+        width: auto;
+    }
+
+    .formulario label {
+        font-size: 1em;
+    }
+
+    .titulo-turismo {
+        font-size: 1.5em;
+        padding-top: 1.5em;
+    }
+
+    .pontosTuristicos-item-titulo::before {
+        content: "📍 ";
+    }
+
+    .pontosTuristicos-item-titulo {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 2em 0 1em;
+    }
+
+    .pontosTuristicos-item-mapa {
+        padding: 0;
+        height: calc(80vw * 450/700);
+    }
+
+    .secao-de-comentarios {
+        width: 90%;
+        padding: 5%;
+        align-self: center;
+    }
+
+    .comentario-botao {
+        width: auto;
+    }
+
+    .comentarios-titulo {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .comentario-texto {
+        text-align: left;
+    }
+
+    .comentarios-form label {
+        font-size: 1em;
+    }
+}
