@@ -23,3 +23,10 @@ Portanto, a proposta do presente desafio é desenvolver a acessibilidade e inclu
 ## Seu desafio é
 
 Utilizar os conhecimentos adquiridos na formação Front-end, no curso acessibilidade web parte 1, para tornar seu site do desafio anterior mais inclusivo.
+
+### Checkpoints. Seu site deve conter:
+
+* Layout responsivo
+* Acessibilidade (Satisfazer necessidades exclusivas de visão) ¹
+* Uso de CSS Grid ou FlexBox
+* Uso de Java Script para dinamizar algum processo na página
