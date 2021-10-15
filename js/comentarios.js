@@ -41,6 +41,9 @@
             secaoDeComentarios.scrollIntoView()
             event.preventDefault()
         }
+        else {
+            console.log('Teste')
+        }
     }
 
     const botao = document.querySelector('[data-comentario-botao]')
