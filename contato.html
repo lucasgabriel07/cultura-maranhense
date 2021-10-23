@@ -26,20 +26,23 @@
     </header>
 
     <main class="contato" id="conteudoPrincipal" role="main">
-      <form class="formulario">
+      <form action="https://formsubmit.co/7a5f6c93afd00d624c3738c82aca0a6d " method="POST" class="formulario">
         <label for="nome">Nome</label>
-        <input type="text" id="nome" class="input" required>
+        <input type="text" name="Nome" id="nome" class="input" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" class="input" required placeholder="exemplo@dominio.com">
+        <input type="email" name="Email" id="email" class="input" required placeholder="exemplo@dominio.com">
 
         <label for="telefone">Telefone</label>
-        <input type="tel" id="telefone" class="input" data-telefone required placeholder="(XX) XXXXX-XXXX">
+        <input type="tel" name="Telefone" id="telefone" class="input" data-telefone required placeholder="(XX) XXXXX-XXXX">
 
         <label for="mensagem">Mensagem</label>
-        <textarea cols="70px" rows="10px" id="mensagem" class="input" required></textarea>
+        <textarea cols="70px" rows="10px" name="Mensagem" id="mensagem" class="input" required></textarea>
 
         <input type="submit" value="Enviar" class="botao">
+
+        <input type="hidden" name="_subject" value="Novo email!">
+        <input type="hidden" name="_captcha" value="false">
       </form>
     </main>
 
